@@ -3,7 +3,7 @@ import Photo from "../assets/photo.jpeg";
 
 function About() {
   return (
-    <section>
+    <section id="About">
       <div>
         <div>
           <img src={Photo} alt="showcase" />

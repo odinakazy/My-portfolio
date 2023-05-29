@@ -6,7 +6,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { GrTwitter } from "react-icons/gr";
 function Home() {
   return (
-    <header className={classes.hero}>
+    <header className={classes.hero} id="header">
       <div className={classes.content}>
         <h4>Hello I'm</h4>
         <h1>Solomon, Odinaka Wisdom</h1>
