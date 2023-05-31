@@ -149,3 +149,34 @@ h4 {
     gap: 3rem;
   }
 }
+
+@media screen and (max-width: 300px) {
+  .hero {
+    height: 135rem;
+  }
+  .hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 110rem;
+    padding: 0 20px;
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .hero {
+    height: 115rem;
+  }
+  .hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 92rem;
+    padding: 0 20px;
+    gap: 3rem;
+  }
+}

@@ -4,6 +4,7 @@ import Cv from "../assets/Cv.pdf";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { GrTwitter } from "react-icons/gr";
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <header className={classes.hero} id="header">
@@ -15,9 +16,9 @@ function Home() {
           <a href={Cv} download className={classes.btn}>
             Download Cv
           </a>
-          <a href="#contact" className={classes.btn}>
+          <Link to="/contact" className={classes.btn}>
             Contact Me
-          </a>
+          </Link>
         </div>
         <div className={classes.socials}>
           <a

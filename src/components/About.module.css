@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 15rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  font-size: 13.5px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 16px;
+  margin: 25px 12px;
+  cursor: pointer;
+}
+.head {
+  text-align: center;
+  font-size: 3rem;
+  margin: 1rem 0;
+  margin-top: -1rem;
+}
+h5 {
+  text-align: center;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.aboutme {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  background: linear-gradient(40deg, transparent, #4caf50, transparent);
+  display: grid;
+  place-items: center;
+}
+.aboutimg img {
+  width: 15rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+}
+.aboutimg img:hover {
+  transform: rotate(0);
+}
+.btn:hover,
+.btn:active {
+  background-color: wheat;
+  color: #333;
+}
