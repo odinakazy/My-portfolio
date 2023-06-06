@@ -5,10 +5,16 @@ import javascript from "../assets/javascript.png";
 import css from "../assets/css.png";
 import react from "../assets/react.png";
 import bootstrap from "../assets/boostrap.png";
+import next from "../assets/next-js-.png";
+import git from "../assets/Git.png";
+import github from "../assets/github.png";
 function Skills() {
   return (
     <section>
-      <h2 className={classes.header}> My Skills</h2>
+      <h2 className={classes.header}>
+        {" "}
+        My <span>Skills</span>
+      </h2>
       <div className={classes.skillcontainer}>
         <div className={classes.card}>
           <img src={html} alt="htmlimage" />
@@ -29,6 +35,18 @@ function Skills() {
         <div className={classes.card}>
           <img src={react} alt="cssimage" />
           <h3>React JS</h3>
+        </div>
+        <div className={classes.card}>
+          <img src={next} alt="cssimage" />
+          <h3>Next JS</h3>
+        </div>
+        <div className={classes.card}>
+          <img src={git} alt="cssimage" />
+          <h3>Git</h3>
+        </div>
+        <div className={classes.card}>
+          <img src={github} alt="cssimage" />
+          <h3>GitHub</h3>
         </div>
       </div>
     </section>

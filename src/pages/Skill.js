@@ -1,13 +1,7 @@
 import React from "react";
 import Skills from "../components/Skills";
-import Footer from "../components/Footer";
 function skillpage() {
-  return (
-    <>
-      <Skills />
-      <Footer />
-    </>
-  );
+  return <Skills />;
 }
 
 export default skillpage;

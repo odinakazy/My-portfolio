@@ -9,6 +9,8 @@
   text-align: center;
   font-size: 2rem;
   margin: 1rem 0;
+  position: relative;
+  padding-top: 1.5rem;
 }
 .card {
   width: 300px;
@@ -21,8 +23,14 @@
   gap: 0.5rem;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 
 .card img {
   width: 65px;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
 }

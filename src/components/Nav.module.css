@@ -18,7 +18,7 @@ nav a {
   padding: 0.9rem;
   border-radius: 50%;
   display: flex;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 nav a span {
   display: block;

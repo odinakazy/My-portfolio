@@ -2,20 +2,35 @@ import React from "react";
 import Photo from "../assets/photo.jpeg";
 import classes from "./About.module.css";
 import { Link } from "react-router-dom";
-
+import { motion } from "framer-motion";
 function About() {
   return (
     <section id="About">
-      <h5>Get To Know</h5>
-      <h2 className={classes.head}>About Me</h2>
-
+      <div className={classes.hello}>
+        <h5>
+          <span>Get</span> To Know
+        </h5>
+        <h2 className={classes.head}>
+          About<span> Me</span>
+        </h2>
+      </div>
       <div className={classes.container}>
-        <div className={classes.aboutme}>
+        <motion.div
+          className={classes.aboutme}
+          initial={{ x: -300, scale: 0.5 }}
+          animate={{ x: 0, scale: 1 }}
+          transition={{ duration: 1 }}
+        >
           <div className={classes.aboutimg}>
             <img src={Photo} alt="showcase" />
           </div>
-        </div>
-        <div className={classes.paragraph}>
+        </motion.div>
+        <motion.div
+          className={classes.paragraph}
+          initial={{ x: 300, scale: 0.5 }}
+          animate={{ x: 0, scale: 1 }}
+          transition={{ duration: 1 }}
+        >
           <p>
             I'm a software developer with a passion for creating innovative and
             effective solutions. I'm going through self-training to be an
@@ -35,7 +50,7 @@ function About() {
               Contact Me
             </Link>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

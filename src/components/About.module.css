@@ -5,15 +5,23 @@
   max-width: 1000px;
   margin: 2rem auto;
 }
-
+span {
+  color: #4caf50;
+}
 .paragraph {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin-top: 2rem;
-  font-size: 13.5px;
+  font-size: 14.5px;
   justify-content: flex-start;
   align-items: flex-start;
+}
+.hello {
+  position: relative;
+}
+.hello h5 {
+  padding-top: 1.5rem;
 }
 
 .btn {

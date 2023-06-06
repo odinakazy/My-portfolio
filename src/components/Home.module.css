@@ -24,9 +24,26 @@
 .hero .content p,
 h4 {
   font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
 }
 .hero .content h1 {
-  font-size: 50px;
+  font-size: 3.125rem;
+  /* font-family: "Times New Roman", Times, serif; */
+  -webkit-text-stroke: 1px #ddd;
+  color: transparent;
+  background-image: url("../assets/hero-text-bg.png");
+  -webkit-background-clip: text;
+  animation: text 20s linear infinite;
+  /* background-image: url("../assets/hero-text-bg.png");
+  -webkit-text-stroke: 1px #ddd;
+   -webkit-background-clip: text;
+  color: transparent;
+  animation: text 20s linear infinite;  */
+}
+@keyframes text {
+  100% {
+    background-position: 2000px 0;
+  }
 }
 
 .hero::before {
