@@ -43,7 +43,7 @@
 }
 .container__portfolio {
   position: relative;
-  height: 320px;
+  height: 350px;
   width: 400px;
   background-color: #fff;
   border-radius: 15px;
@@ -100,7 +100,11 @@
 .img {
   width: 400px;
   padding: 10px 10px;
-  border-radius: 20px;
+
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* border: 2px solid red; */
 }
 
 .text {
