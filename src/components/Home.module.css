@@ -32,7 +32,7 @@ h4 {
   -webkit-text-stroke: 1px #ddd;
   color: transparent;
   background-image: url("../assets/hero-text-bg.png");
-  -webkit-background-clip: text;
+  background-clip: text;
   animation: text 20s linear infinite;
   /* background-image: url("../assets/hero-text-bg.png");
   -webkit-text-stroke: 1px #ddd;

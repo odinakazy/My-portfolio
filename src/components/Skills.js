@@ -8,6 +8,7 @@ import bootstrap from "../assets/boostrap.png";
 import next from "../assets/next-js-.png";
 import git from "../assets/Git.png";
 import github from "../assets/github.png";
+import typescript from "../assets/typescripts.png";
 function Skills() {
   return (
     <section>
@@ -47,6 +48,10 @@ function Skills() {
         <div className={classes.card}>
           <img src={github} alt="cssimage" />
           <h3>GitHub</h3>
+        </div>
+        <div className={classes.card}>
+          <img src={typescript} alt="cssimage" />
+          <h3>TypeScript</h3>
         </div>
       </div>
     </section>
