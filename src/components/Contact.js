@@ -49,7 +49,7 @@ function Contact() {
             <BsWhatsapp className={classes.changeFont} />
             <h4>Whatsapp</h4>
             <a
-              href="https://api.whatsapp.com/send?phone+23408133460762"
+              href="https://wa.me/23408133460762"
               target="_blank"
               rel="noreferrer"
             >

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 function About() {
   return (
-    <section id="About">
+    <section id="About" className={classes.section}>
       <div className={classes.hello}>
         <h5>
           <span>Get</span> To Know
@@ -32,14 +32,12 @@ function About() {
           transition={{ duration: 1 }}
         >
           <p>
-            I'm a software developer with a passion for creating innovative and
-            effective solutions. I'm going through self-training to be an
-            impacting Software Engineer with broad knowledge and understanding
-            of the needed skillset. I use various web development packages to
-            develop custom-crafted, customer-focused websites and designs. With
-            a proven track record of achievements, I can bring positivity,
-            support, and a creative mindset to any team to achieve company
-            goals.
+            Software developer with 1+ years of experience with passion for
+            creating innovative and effective solutions. I use various web
+            development packages to develop custom-crafted, customer-focused
+            websites and designs. With a proven track record of achievements, I
+            can bring positivity, support, and a creative mindset to any team to
+            achieve company goals.
           </p>
           <p>
             Also i create pixel-perfect designs ensuring that i meet my client
@@ -51,6 +49,23 @@ function About() {
             </Link>
           </div>
         </motion.div>
+      </div>
+      <br />
+      <br />
+      <h2 className={classes.head}>
+        Exper<span>ience</span>
+      </h2>
+      <div className={classes.timeline}>
+        <div className={classes.timeline__wrapper}>
+          <h2>React Developer</h2>
+          <h3>Dowell Research sinagore</h3>
+          <h6>Jan 2023 - present</h6>
+        </div>
+        <div className={classes.timeline__wrapper}>
+          <h2>React Developer</h2>
+          <h3>Upwork(freelancer)</h3>
+          <h6>Oct 2022 - present</h6>
+        </div>
       </div>
     </section>
   );
