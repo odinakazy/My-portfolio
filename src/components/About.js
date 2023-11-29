@@ -32,16 +32,24 @@ function About() {
           transition={{ duration: 1 }}
         >
           <p>
-            Software developer with 1+ years of experience with passion for
-            creating innovative and effective solutions. I use various web
-            development packages to develop custom-crafted, customer-focused
-            websites and designs. With a proven track record of achievements, I
-            can bring positivity, support, and a creative mindset to any team to
-            achieve company goals.
+            I am a detailed and result-oriented Frontend developer with two
+            years of solid working experience on the field and a proven track
+            record in creating cutting-edge and impactful solutions, specialized
+            in Web Development, Project Management and JavaScript. I have
+            demonstrated success by contributing and deploying processes and
+            products that improves operational efficiency and user experience
+            which ultimately boosts company’s revenue. My passion for innovation
+            fuels my ability to leverage diverse web development packages,
+            tailoring bespoke websites and designs that prioritize client
+            objectives and user experience.
           </p>
           <p>
-            Also i create pixel-perfect designs ensuring that i meet my client
-            needs and develop highly responsive designs
+            My meticulous approach guarantees pixel-perfect designs, ensuring
+            seamless responsiveness and meeting the needs of each client. Known
+            for my positivity, collaborative team spirit, and a keen eye for
+            detail, I contribute a creative mindset to every team and
+            consistently aligning efforts with company objectives to drive
+            overall success.
           </p>
           <div>
             <Link to="/contact" className={classes.btn}>
@@ -64,7 +72,7 @@ function About() {
         <div className={classes.timeline__wrapper}>
           <h2>React Developer</h2>
           <h3>Upwork(freelancer)</h3>
-          <h6>Oct 2022 - present</h6>
+          <h6>jan 2022 - present</h6>
         </div>
       </div>
     </section>
