@@ -32,7 +32,7 @@ function About() {
           transition={{ duration: 1 }}
         >
           <p>
-            I am a detailed and result-oriented Frontend developer with two
+            I am a detailed and result-oriented Frontend developer with three
             years of solid working experience on the field and a proven track
             record in creating cutting-edge and impactful solutions, specialized
             in Web Development, Project Management and JavaScript. I have
