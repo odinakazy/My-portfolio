@@ -72,7 +72,7 @@ function About() {
         <div className={classes.timeline__wrapper}>
           <h2>React Developer</h2>
           <h3>Upwork(freelancer)</h3>
-          <h6>jan 2022 - present</h6>
+          <h6>jan 2021 - present</h6>
         </div>
       </div>
     </section>
