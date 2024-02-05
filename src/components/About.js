@@ -67,12 +67,12 @@ function About() {
         <div className={classes.timeline__wrapper}>
           <h2>React Developer</h2>
           <h3>Dowell Research sinagore</h3>
-          <h6>Jan 2023 - present</h6>
+          <h6>Jan 2023 - Dec 2023</h6>
         </div>
         <div className={classes.timeline__wrapper}>
           <h2>React Developer</h2>
           <h3>Upwork(freelancer)</h3>
-          <h6>jan 2021 - present</h6>
+          <h6>Jan 2021 - Dec 2022</h6>
         </div>
       </div>
     </section>
