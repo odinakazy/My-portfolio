@@ -7,7 +7,7 @@
 }
 .section {
   background: url("../assets/GREEN.webp") no-repeat center center/cover;
-  height: 170vh;
+  height: 100%;
   margin-top: -1rem;
   margin-bottom: -2rem;
   color: white;

@@ -60,7 +60,7 @@ function About() {
       </div>
       <br />
       <br />
-      <h2 className={classes.head}>
+      {/* <h2 className={classes.head}>
         Exper<span>ience</span>
       </h2>
       <div className={classes.timeline}>
@@ -74,7 +74,7 @@ function About() {
           <h3>Upwork(freelancer)</h3>
           <h6>Jan 2021 - Dec 2022</h6>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
