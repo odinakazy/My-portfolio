@@ -3,6 +3,7 @@ import classes from "./Projects.module.css";
 import Moviemania from "../assets/moviemania.png";
 import Expensestracker from "../assets/tracker.png";
 import Africanfilm from "../assets/Africanfilmfinance.png";
+import Okhma from "../assets/Okhma.png";
 import Elite from "../assets/Elite.png";
 import ProjectCard from "./ProjectCard";
 
@@ -19,6 +20,14 @@ const projectsData = [
     altText: "Elite Concierge Website",
     title: "Elite Concierge Website",
     liveDemoLink: "https://elite-concierge.netlify.app/",
+    githubLink: "https://github.com/odinakazy/",
+  },
+
+  {
+    imgSrc: Okhma,
+    altText: "Okhma Website",
+    title: "Okhma Website",
+    liveDemoLink: "https://okhma.com/",
     githubLink: "https://github.com/odinakazy/",
   },
   {
