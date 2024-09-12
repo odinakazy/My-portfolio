@@ -6,7 +6,6 @@
 
 .project {
   background: url("../assets/GREEN.webp") no-repeat center center/cover;
-  height: 140vh;
   margin-top: -1rem;
   margin-bottom: -2rem;
   color: white;
@@ -56,12 +55,12 @@
 }
 
 .project__wrapper {
-  max-width: 1000px;
-  margin: 2rem auto;
-  margin-bottom: 10rem;
+  width: 100%;
+  justify-content: center;
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 30px;
+  grid-gap: 40px;
+  padding: 4rem 0rem;
 }
 
 .btn {

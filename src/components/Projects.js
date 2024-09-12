@@ -2,8 +2,40 @@ import React from "react";
 import classes from "./Projects.module.css";
 import Moviemania from "../assets/moviemania.png";
 import Expensestracker from "../assets/tracker.png";
-import BankistWebsite from "../assets/bankistweb.png";
-import Edger from "../assets/edgerlegder.png";
+import Africanfilm from "../assets/Africanfilmfinance.png";
+import Elite from "../assets/Elite.png";
+import ProjectCard from "./ProjectCard";
+
+const projectsData = [
+  {
+    imgSrc: Africanfilm,
+    altText: "Africanfilmfinance website",
+    title: " Africanfilmfinance Website",
+    liveDemoLink: "https://africafilmfinanceforum.com/",
+    githubLink: "https://github.com/odinakazy/",
+  },
+  {
+    imgSrc: Elite,
+    altText: "Elite Concierge Website",
+    title: "Elite Concierge Website",
+    liveDemoLink: "https://elite-concierge.netlify.app/",
+    githubLink: "https://github.com/odinakazy/",
+  },
+  {
+    imgSrc: Moviemania,
+    altText: "moviemania",
+    title: "Moviemania App",
+    liveDemoLink: "https://moviemania-eight.vercel.app/",
+    githubLink: "https://github.com/odinakazy/Moviemania",
+  },
+  {
+    imgSrc: Expensestracker,
+    altText: "tracker app",
+    title: "Expenses tracker App",
+    liveDemoLink: "https://expenses-tracker-app-brown.vercel.app/",
+    githubLink: "https://github.com/odinakazy/ExpensesTracker-App",
+  },
+];
 function Projects() {
   return (
     <div className={classes.project}>
@@ -11,100 +43,16 @@ function Projects() {
       <h2 className={classes.headerss}>Projects</h2>
 
       <div className={classes.project__wrapper}>
-        <div className={classes.container__portfolio}>
-          <article className={classes.portfolio__items}>
-            <div className={classes.portfolio_image}>
-              <img src={Moviemania} alt="moviemania" className={classes.img} />
-            </div>
-            <h3 className={classes.text}>Moviemania App</h3>
-
-            <div className={classes.link}>
-              <a
-                href="https://moviemania-web.netlify.app/"
-                className={classes.btn1}
-              >
-                Live Demo
-              </a>
-              <a
-                href="https://github.com/odinakazy/Moviemania"
-                className={classes.btn}
-              >
-                Github
-              </a>
-            </div>
-          </article>
-        </div>
-        <div className={classes.container__portfolio}>
-          <article className={classes.portfolio__items}>
-            <div className={classes.portfolio_image}>
-              <img
-                src={Expensestracker}
-                alt="tracker app"
-                className={classes.img}
-              />
-            </div>
-            <h3 className={classes.text}>Expenses tracker App</h3>
-
-            <div className={classes.link}>
-              <a
-                href="https://expenses-tracker-odinaka.netlify.app/"
-                className={classes.btn1}
-              >
-                Live Demo
-              </a>
-              <a
-                href="https://github.com/odinakazy/ExpensesTracker-App"
-                className={classes.btn}
-              >
-                Github
-              </a>
-            </div>
-          </article>
-        </div>
-        <div className={classes.container__portfolio}>
-          <article className={classes.portfolio__items}>
-            <div className={classes.portfolio_image}>
-              <img
-                src={BankistWebsite}
-                alt="bankistwebsite app"
-                className={classes.img}
-              />
-            </div>
-            <h3 className={classes.text}>Bankist Website </h3>
-
-            <div className={classes.links}>
-              <a
-                href="https://bankistwebsite-odinaka.netlify.app/"
-                className={classes.btn1}
-              >
-                Live Demo
-              </a>
-              <a href="https://github.com/odinakazy/" className={classes.btn}>
-                Github
-              </a>
-            </div>
-          </article>
-        </div>
-        <div className={classes.container__portfolio}>
-          <article className={classes.portfolio__items}>
-            <div className={classes.portfolio_image}>
-              <img src={Edger} alt="moviemania" className={classes.img} />
-            </div>
-            <h3 className={classes.text}>Edgerlegder Website</h3>
-
-            <div className={classes.links}>
-              <a
-                href="https://legder-static-website-odinaka.netlify.app/"
-                className={classes.btn1}
-              >
-                Live Demo
-              </a>
-              <a href="https://github.com/odinakazy/" className={classes.btn}>
-                Github
-              </a>
-            </div>
-          </article>
-        </div>
+        {projectsData.map((project, index) => (
+          <ProjectCard
+            key={index}
+            imgSrc={project.imgSrc}
+            altText={project.altText}
+            title={project.title}
+            liveDemoLink={project.liveDemoLink}
+            githubLink={project.githubLink}
+          />
+        ))}
       </div>
     </div>
   );

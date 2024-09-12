@@ -5,6 +5,7 @@ import Root from "./pages/Root";
 import SkillPage from "./pages/Skill";
 import ContactPage from "./pages/ContactPage";
 import Project from "./pages/Project";
+import NotFoundPage from "./pages/NotFoundPage";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       { path: "/skill", element: <SkillPage /> },
       { path: "/project", element: <Project /> },
       { path: "/contact", element: <ContactPage /> },
+      { path: "*", element: <NotFoundPage /> },
     ],
   },
 ]);

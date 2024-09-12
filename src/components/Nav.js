@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import React from "react";
 import { Tooltip } from "react-tooltip";
 import { AiOutlineHome } from "react-icons/ai";
@@ -6,75 +7,59 @@ import { BiBook } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { MdOutlineMessage } from "react-icons/md";
 import styles from "./Nav.module.css";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
 function Nav() {
-  const [activeNav, setActiveNav] = useState("");
+  const location = useLocation();
   return (
     <nav>
-      <Link
+      <NavLink
         data-tooltip-id="my-tooltip"
         data-tooltip-content="Home"
         data-tooltip-place="top"
         to="/"
-        className={activeNav === "" ? styles.active : ""}
-        onClick={() => {
-          setActiveNav("");
-        }}
+        className={`${location.pathname === "/" ? styles.active : ""}`}
       >
         <AiOutlineHome color="white" />
-      </Link>
+      </NavLink>
 
-      <Link
+      <NavLink
         data-tooltip-id="my-tooltip"
         data-tooltip-content="About"
         data-tooltip-place="top"
         to="/about"
-        onClick={() => {
-          setActiveNav("about");
-        }}
-        className={activeNav === "about" ? styles.active : ""}
+        className={`${location.pathname === "/about" ? styles.active : ""}`}
       >
         <AiOutlineUser color="white" />
-      </Link>
+      </NavLink>
 
-      <Link
+      <NavLink
         data-tooltip-id="my-tooltip"
         data-tooltip-content="Skills"
         data-tooltip-place="top"
         to="/skill"
-        onClick={() => {
-          setActiveNav("#skill");
-        }}
-        className={activeNav === "#skill" ? styles.active : ""}
+        className={`${location.pathname === "/skill" ? styles.active : ""}`}
       >
         <BiBook color="white" />
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
         data-tooltip-id="my-tooltip"
         data-tooltip-content="Project"
         data-tooltip-place="top"
         to="/project"
-        onClick={() => {
-          setActiveNav("#project");
-        }}
-        className={activeNav === "#project" ? styles.active : ""}
+        className={`${location.pathname === "/project" ? styles.active : ""}`}
       >
         <RiServiceLine color="white" />
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
         data-tooltip-id="my-tooltip"
         data-tooltip-content="Contact"
         data-tooltip-place="top"
         to="/contact"
-        onClick={() => {
-          setActiveNav("#contact");
-        }}
-        className={activeNav === "#contact" ? styles.active : ""}
+        className={`${location.pathname === "/contact" ? styles.active : ""}`}
       >
         <MdOutlineMessage color="white" />
-      </Link>
+      </NavLink>
       <Tooltip id="my-tooltip" />
     </nav>
   );
